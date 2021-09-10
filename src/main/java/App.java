@@ -31,10 +31,9 @@ public class App {
                         taxedAmount += amount * county.getCountyTax();
                     }
                 }
-                System.out.printf("The tax is $%.2f.\n", taxedAmount);
             }
             total = amount + taxedAmount;
-            System.out.printf("The total is $%.2f.\n", total);
+            System.out.print(taxedAmount == 0 ? String.format("The total is $%.2f.\n", total) : String.format("The tax is $%.2f.\nThe total is $%.2f", taxedAmount, total));
         } catch (Exception e) {
             System.out.println("Invalid input, please restart the program and try a different value.");
         }
