@@ -1,3 +1,7 @@
+/*
+ *  UCF COP3330 Fall 2021 Assignment 20 Solution
+ *  Copyright 2021 Tyler Snowdon
+ */
 enum State {
 
     WISCONSIN("Wisconsin", 0.05, new County("Eau Claire", 0.005), new County("Dunn", 0.004)),
